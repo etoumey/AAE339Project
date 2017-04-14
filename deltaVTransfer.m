@@ -1,6 +1,6 @@
 function [ deltaV ] = deltaVTransfer( r1, r2 )
-% Computes the delta v required to circularize from a Hohmann transfer
-% orbit, given the initial and final altitudes of the orbit.
+% Computes the delta v required to inject into a Hohmann transfer orbit,
+% given the initial and final orbit altitudes.
 %   r1: Initial orbit height (km)
 %   r2: Final orbit height (km)
     
