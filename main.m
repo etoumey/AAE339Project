@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%% AAE 339 Project %%%%%%%%%%%%%%%%%%%%%
 %  Description: Main script for orbital calculations      %
 %  Team 7:   Henry Heim                                   %
-%            Logan Kirsch                                 %
+%            Logan Kirsch - Sucks                         %
 %            Chris Prak                                   %
 %            Glen Shumaker                                %  
 %            Eliot Toumey                                 %
