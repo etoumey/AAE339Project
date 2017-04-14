@@ -18,7 +18,7 @@ altGEO = 35786; % km, geostationary orbit altitude
 incLEO = lat; % low earth orbit inclination
 incGEO = 0; % geostationary orbit inclinaton
 
-% dVLaunch = deltaVLaunch( args );
-% dVTransfer = deltaVTransfer( args );
-% dVCircularize = deltaVCircularize( args );
-% dVInclination = deltaVInclination(alt, angle);
+% dVLaunch = deltaVLaunch( ro, rf, lat, azimuth );
+% dVTransfer = deltaVTransfer( r1, r2 );
+% dVCircularize = deltaVCircularize( r1, r2 );
+% dVInclination = deltaVInclination( r, angle );
