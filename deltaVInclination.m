@@ -7,6 +7,6 @@ function [ deltaV ] = deltaVInclination( alt, angle )
     G = 6.67408e-11; % m^3 kg^-1 s^-2
     M = 5.9721986e24; % kg
 
-    velocity = sqrt(G * M / alt);
+    velocity = sqrt(G * M / (alt * 1000));
     deltaV = 2 * velocity * sind(angle / 2);
 end
