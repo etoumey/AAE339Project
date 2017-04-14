@@ -12,6 +12,12 @@ clc; clear; close all;
 payloadMass = 3000; % kg
 lat = 28.4740;
 
+% Orbit charicteristics
+altLEO = 100; % km, low earth orbit altitude
+altGEO = 35786; % km, geostationary orbit altitude
+incLEO = lat; % low earth orbit inclination
+incGEO = 0; % geostationary orbit inclinaton
+
 % dVLaunch = deltaVLaunch( args );
 % dVTransfer = deltaVTransfer( args );
 % dVCircularize = deltaVCircularize( args );
