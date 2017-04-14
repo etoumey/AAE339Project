@@ -1,4 +1,4 @@
-function [ output_args ] = deltaVLaunch( input_args )
+function [ output_args ] = deltaVCircularize( input_args )
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 
