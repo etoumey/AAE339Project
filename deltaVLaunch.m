@@ -4,6 +4,6 @@ function [ deltaV ] = deltaVLaunch( ro, rf )
   mu = 3.98600441E14; %m^3 s^-2
   
   deltaV = sqrt(mu/ro)*(sqrt(2*rf/(ro+rf))-1);
-
+kljAf;ljkSADF;LKJ
 
 end
