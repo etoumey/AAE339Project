@@ -9,5 +9,6 @@
 clc; clear; close all;
 
 % Constants 
-payloadMass = 0;
+payloadMass = 3000;
 lat = 28.4740;
+
