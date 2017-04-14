@@ -12,3 +12,7 @@ clc; clear; close all;
 payloadMass = 3000; % kg
 lat = 28.4740;
 
+% dVLaunch = deltaVLaunch( args );
+% dVTransfer = deltaVTransfer( args );
+% dVCircularize = deltaVCircularize( args );
+% dVInclination = deltaVInclination(alt, angle);
