@@ -9,9 +9,8 @@ function [ deltaV ] = deltaVTransfer( r1, r2 )
     M = 5.9721986e24; % kg
     
     % Convert given orbit radii from km to m
-    r1 = r1 * 1000;
-    r2 = r2 * 1000;
+
     
     % Compute the required delta v
-    deltaV = sqrt(G * M / r2) * (sqrt(2 * r1 / (r1 + r2)) - 1);
+    deltaV = sqrt(G * M / r1) * (sqrt(2 * r2 / (r1 + r2)) - 1);
 end

@@ -13,13 +13,15 @@ payloadMass = 3000; % kg
 lat = 28.4740;
 
 % Orbit charicteristics
-altOriginal = 6.3710088E6; %earth's radius in meters
-altLEO = 100; % km, low earth orbit altitude
-altGEO = 35786; % km, geostationary orbit altitude
+rEarth = 6.3710088E6; %earth's radius in meters
+altLEO = 100000; % km, low earth orbit altitude
+altGEO = 35786000; % km, geostationary orbit altitude
 incLEO = lat; % low earth orbit inclination
 incGEO = 0; % geostationary orbit inclinaton
 
-dVLaunch = deltaVLaunch( altOriginal, altOriginal+altLEO*1000, lat, 90 );
-dVTransfer = deltaVTransfer( altLEO+altOriginal/1000, altGEO+altOriginal/1000 );
-% dVCircularize = deltaVCircularize( r1, r2 );
-% dVInclination = deltaVInclination( r, angle );
+dVLaunch = deltaVLaunch( rEarth, rEarth+altLEO, lat, 90 );
+dVTransfer = deltaVTransfer( altLEO+rEarth, rEarth+altGEO);
+dVCircularize = deltaVCircularize( rEarth+altLEO, rEarth+altGEO );
+dVInclination = deltaVInclination( rEarth+altGEO, lat );
+
+[dV1 dV2] = staging(dVLaunch + dVTransfer + dVInclination, dVCircularize);

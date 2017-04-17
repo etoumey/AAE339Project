@@ -9,7 +9,7 @@ function [ deltaV ] = deltaVInclination( r, angle )
     M = 5.9721986e24; % kg
     
     % Calculate orbital velocity at given altitude
-    velocity = sqrt(G * M / (r * 1000));
+    velocity = sqrt(G * M / (r ));
     
     % Calculate required delta v to change inclination
     deltaV = 2 * velocity * sind(angle / 2);

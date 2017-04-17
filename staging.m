@@ -18,7 +18,7 @@ Mfuel_sat = (exp(delta_v3/(g0*Isp_sat))-1)*Msatellite;
 M03 = 1.05*(Msatellite+Mfuel_sat);
 
 i = 1;
-for delta_v2 = 0:10:delta_v-delta_v3
+for delta_v2 = 0:100:delta_v-delta_v3
     
     Ms2 = M03*(exp(delta_v2/(g0*Isp2))-1)/(fs2-((exp(delta_v2/(g0*Isp2))-1)));
     Mfuel_2 = Ms2*fs2;
