@@ -25,3 +25,4 @@ dVCircularize = deltaVCircularize( rEarth+altLEO, rEarth+altGEO );
 dVInclination = deltaVInclination( rEarth+altGEO, lat );
 
 [dV1 dV2] = staging(dVLaunch + dVTransfer + dVInclination, dVCircularize);
+
