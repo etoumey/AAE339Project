@@ -57,13 +57,15 @@ delta_v2Opt = dv2(I);
 dv2 = g0*Isp2*log((M03+Ms2+Mfuel_2)/(M03+Ms2));
 dv1 = g0*Isp1*log((M02+Ms1+Mfuel_1)/(M02+Ms1));
 
-plot(delta_v2, MfuelOpt)
-hold on
-title('Optimum Delta V')
-xlabel('Delta V (m/s)')
-ylabel('Fuel Mass (kg)')
-plot(delta_v2Opt, Mf, 'ro');
-ylim([-1E7, 1E7])
+% plot(delta_v2, MfuelOpt)
+% hold on
+% title('Optimum Delta V')
+% xlabel('Delta V (m/s)')
+% ylabel('Fuel Mass (kg)')
+% plot(delta_v2Opt, Mf, 'ro');
+% ylim([-1E7, 1E7])
 %plot(delta_v-delta_v2, MfuelOpt)
-
+Mfuel_1
+Mfuel_2
+Mfuel_sat
 end
